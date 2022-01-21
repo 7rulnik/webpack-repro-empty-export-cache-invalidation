@@ -1,13 +1,8 @@
 module.exports = {
     entry: './index.js',
     mode: 'production',
-    output: {
-      pathinfo: true,
-      clean: true,
-    },
     target: 'node',
     optimization: {
-      minimize: false
       // usedExports: false
     },
     cache: {
@@ -19,7 +14,6 @@ module.exports = {
         },
       },
       infrastructureLogging: {
-        // debug: /webpack\.cache/,
         debug: true
       }
 }
